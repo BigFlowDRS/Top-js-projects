@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Available books...</h1>
+    <div class="container">
+        <div class="book_card">
+            <h2>dfdflsadf</h2>
+            <p>
+                ldkfj dslkjf ldskjf ;laskd jfkldsl fjads;l fjl
+            </p>
+        </div>
+        <div class="book_card">
+            <h2>dfdflsadf</h2>
+            <p>
+                ldkfj dslkjf ldskjf ;laskd jfkldsl fjads;l fjl
+            </p>
+        </div>
+        <div class="book_card">
+            <h2>dfdflsadf</h2>
+            <p>
+                ldkfj dslkjf ldskjf ;laskd jfkldsl fjads;l fjl
+            </p>
+            <div class="buttons">
+                <button class="change_read">
+                    Change read
+                </button>
+                <button class="remove">
+                    Remove
+                </button>
+            </div>
+
+            </button>
+        </div>
+    </div>
+
+    <button class="open-btn" onclick="openDialog()">Add Book</button>
+
+    <dialog id="bookDialog">
+        <button class="close-btn" onclick="closeDialog()">&#x2716;</button>
+        <h3>Add Book Details</h3>
+        <form  id="bookForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required><br>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required><br>
+            <label for="total_pages">Total Pages:</label>
+            <input type="number" id="total_pages" name="total_pages" required><br>
+            <label for="read">Read:</label>
+            <input type="checkbox" id="read" name="read"><br>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </dialog>
+    
+    <script src="script.js"></script>
+</body>
+</html>
